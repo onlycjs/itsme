@@ -4,7 +4,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: #333;
 }
 
 html, body {
@@ -12,6 +11,11 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+}
+h2 {
+    float: left;
+    margin-top: 35px;
+    margin-right: 14px;
 }
 header {
     width: 100%;
@@ -23,8 +27,6 @@ header {
 .box {
     width: 100%;
     height: 100%;
-    position: relative;
-    color: #ffffff;
     font-size: 24pt;
 }
     
@@ -48,7 +50,8 @@ header {
     display: block;
     text-align: center;
     font-size: 50px;
-    color: white;
+    color: grey;
+    font-family: 'Nanum Pen Script';
     
 }
 .menu > ul > li:hover {
@@ -56,11 +59,47 @@ header {
 }
 
 #main {
-
+    background-color: #ffffff;
 }
 
 #infographic {
     background-color: #FFD0D6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-list {
+    display: grid;
+    width: 1030px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.card {
+    height: 350px;
+}
+
+.card > .canvas-container {
+    width: 100%;
+    height: 250px;
+}
+
+.canvas-container > canvas {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.card > .info > p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #awards {
@@ -70,6 +109,8 @@ header {
 #project {
     background-color: #FEE19F;
 }
+
+
 
 footer {
     height:60px;

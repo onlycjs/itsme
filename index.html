@@ -3,24 +3,91 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>portfolio</title>
+    <script src="js/Card.js"></script>
+    <script src="js/App.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header>
       <div class="menu">
+        <h2>ChoiJaeSeung's Portfolio</h2>
         <ul>
-            <li class="main scroll"><a href="#main">메인</a></li>
-            <li class="infographic scroll"><a href="#infographic">자기소개</a></li>
-            <li class="awards scroll"><a href="#awards">수상내역</a></li>
-            <li class="project scroll"><a href="#project">프로젝트</a></li>
+            <li id="main" class="scroll"><a href="#main">메인</a></li>
+            <li id="infographic" class="scroll"><a href="#infographic">자기소개</a></li>
+            <li id="awards" class="scroll"><a href="#awards">수상내역</a></li>
+            <li id="project" class="scroll"><a href="#project">프로젝트</a></li>
         </ul>
     </div> 
    </header>
     <section id="main" class="box"></section>
-    <section id="infographic" class="box"></section>
+    <section id="infographic" class="box">
+            <div class="title">
+                    <h2>My Skills</h2>
+                </div>
+                <div class="card-list">
+                    <div class="card" data-percent="80">
+                        <div class="canvas-container">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>HTML & CSS</p>
+                        </div>
+                    </div>
+        
+                    <div class="card" data-percent="85">
+                        <div class="canvas-container">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+        
+                    <div class="card" data-percent="60">
+                        <div class="canvas-container">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>Android</p>
+                        </div>
+                    </div>
+        
+                    <div class="card" data-percent="70">
+                        <div class="canvas-container">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>JSP</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
     <section id="awards" class="box"></section>
-    <section id="project" class="box"></section>
+    <section id="project" class="box">
+            <div class="title">
+                    <h2>My Portfolio</h2>
+                </div>
+                <div class="grid-area">
+                    <div class="grid">
+                        <a class="grid-item" href="images/img_data.PNG"><img src="images/img_data.PNG" width="200px"></a>
+                        <a class="grid-item" href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                        <a class="grid-item" href="images/img_top20.PNG"><img src="images/img_top20.PNG" width="200px"></a>
+                        <a class="grid-item" href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                        <a class="grid-item" href="images/img_search.PNG"><img src="images/img_search.PNG" width="200px"></a>
+                        <a class="grid-item" href="images/img_graph.PNG"><img src="images/img_graph.PNG" width="200px"></a>
+                        <a class="grid-item" href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                        <a class="grid-item" href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                        <a class="grid-item" href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                    </div>
+                </div>
+    </section>
     <footer>
         <h1>Copyright &copy;Yangyoung Digital High School Software Developer All rights reserved</h1>
         <div class="icon-box">
@@ -29,9 +96,7 @@
             <img src="images/icon_twitter.png" alt="트위터">
         </div>
     </footer>     
-    <script src="js/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/script.js"></script>
+
 </body>
 
 </html>
