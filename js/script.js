@@ -1,5 +1,4 @@
-
-window.onload = function () {
+window.addEventListener("load", function () {
     $(".box").each(function () {
         
         $(this).on("mousewheel DOMMouseScroll", function (e) {
@@ -31,7 +30,8 @@ window.onload = function () {
             });
         });
     });
-}
+    
+});
 function main() {
     $("html,body").stop().animate({
             scrollTop: '0px'
@@ -42,7 +42,7 @@ function main() {
 }
 function infographic() {
     $("html,body").stop().animate({
-            scrollTop: '965px'
+            scrollTop: '920px'
         }, {
                 duration: 800,
                 complete: function () { }
@@ -50,7 +50,7 @@ function infographic() {
 }
 function awards() {
     $("html,body").stop().animate({
-            scrollTop: '1935px'
+            scrollTop: '1840px'
         }, {
                 duration: 800,
                 complete: function () { }
@@ -58,7 +58,7 @@ function awards() {
 }
 function project() {
     $("html,body").stop().animate({
-            scrollTop: '2905px'
+            scrollTop: '2760px'
         }, {
                 duration: 800,
                 complete: function () { }

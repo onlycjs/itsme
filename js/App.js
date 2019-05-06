@@ -10,7 +10,7 @@ class App {
             this.cardList.push(new Card(c, p));
         });
 
-        this.isDrawed = false;z
+        this.isDrawed = false;
         this.p = document.querySelector("#infographic");
         window.addEventListener("scroll", this.scrollHandle.bind(this));
     }
@@ -27,6 +27,7 @@ class App {
     }
 }
 
-window.onload = function() {
+window.addEventListener("load", function() {
     let app = new App();
-}
+    console.log("앱 스타팅");
+});
